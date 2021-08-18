@@ -1,7 +1,15 @@
-# Multi-weather-city: Adverse weather stacking for autonomous driving
+# Multi-weather city: Adverse weather stacking for autonomous driving
 
+Contributors:
+- Valentina Mușat, [Oxford Robotics Institute](https://ori.ox.ac.uk/), University of Oxford
+- Ivan Fursa, [Autonomous Driving Group](add_link), Oxford Brookes University
+- Paul Newman, [Oxford Robotics Institute](https://ori.ox.ac.uk/), University of Oxford
+- Fabio Cuzzolin, [Visual Artificial Intelligence Laboratory](https://cms.brookes.ac.uk/staff/FabioCuzzolin/), Oxford Brookes University
+- Andrew Bradley, [Autonomous Driving Group](add_link), Oxford Brookes University
 
-This is the official page of the Multi-weather-city dataset, which is released at the **2nd Autonomous Vehicle Vision (AVVision) Workshop**. 
+Arxiv article [here](add_link).
+
+This is the official page of the Multi-weather city dataset, which is released at the [2nd Autonomous Vehicle Vision (AVVision) Workshop](https://avvision.xyz/iccv21/). 
 The Multi-weather-city dataset features 2975 images (the train set of Cityscapes) in 7 generated adverse conditions, using a set of GAN and CycleGAN models:
 1. overcast with (adherent) droplets
 2. night-time
@@ -29,25 +37,25 @@ Due to licensing restrictions, we offer the materials and steps to reconstruct t
 After downloading, the folder structure should look like this:<br/>
 ![Cityscapes tree structure](tree_cityscapes.png)
 
-2. Download the image differences from this [Google Drive link](add_link_from_andy). The Cityscapes folder and the Cityscapes_difference folder should be on the same level.
+2. Download the image differences (12.25 GB) from this [Google Drive link](add_link_from_andy). The ```Cityscapes``` folder and the ```Cityscapes_difference``` folder should be on the same level.
 3. Clone this repository and make sure you have the necessary libraries.
 4. Resize and center-crop the Cityscapes dataset, then reconstruct the conditions.<br/>
-The argument ```-cityscapes_path```, is the path to the Cityscapes dataset that you just downloaded. The argument ```-city_diff_path```, is the path to the Cityscapes_difference folder that you just downloaded. The argument ```-multi_weather_city_path```, is the root path to where Cityscapes will be resized and cropped, and to where all the other conditions will be reconstructed.
+The argument ```-cityscapes_path```, is the path to the ```Cityscapes``` dataset that you just downloaded. The argument ```-city_diff_path```, is the path to the ```Cityscapes_difference``` folder that you just downloaded. The argument ```-multi_weather_city_path```, is the root path to where the original Cityscapes dataset will be resized and cropped, and to where all the other conditions will be reconstructed.
     ```
     cd multi-weather-city
     python reconstruct_cond.py -cityscapes_path '/path/to/Cityscapes' -city_diff_path '/path/to/Cityscapes_difference' -multi_weather_city_path '/path/to/Cityscapes_multi_weather'
     ```
     This will take some time.
 5. When the script is done, the folder Cityscapes_multi_weather should now contain:
-    - Cityscapes_overcast, which is the original Cityscapes (both GT and left RGB images) but resized to 1024x512 and center-cropped, thus a final size of 512x512
+    - ```Cityscapes_overcast```, which is the original Cityscapes (both GT and left RGB images) but resized to 1024x512 and center-cropped, thus a final size of 512x512
     - 7 folders, each folder for one condition:
-        1. Cityscapes_overcast_drops
-        2. Cityscapes_night
-        3. Cityscapes_night_drops
-        4. Cityscapes_snow
-        5. Cityscapes_snow_drops
-        6. Cityscapes_wet
-        7. Cityscapes_wet_drops
+        1. ```Cityscapes_overcast_drops```
+        2. ```Cityscapes_night```
+        3. ```Cityscapes_night_drops```
+        4. ```Cityscapes_snow```
+        5. ```Cityscapes_snow_drops```
+        6. ```Cityscapes_wet```
+        7. ```Cityscapes_wet_drops```
 
 ### Extension
 In order to extend  this dataset to Foggy Cityscapes, please consult the [official website](https://people.ee.ethz.ch/~csakarid/SFSU_synthetic/).
@@ -63,6 +71,9 @@ Since this dataset is based on Cityscapes, it will follow the same license:
 >5. That all rights not expressly granted to you are reserved by us (Daimler AG, MPI Informatics, TU Darmstadt).
 
 Source: [Cityscapes License agreement](https://www.cityscapes-dataset.com/license/)
+
+### Acknowledgements
+The authors wish to thank Alexander Rast, Peter Ball and Matthias Rolf for fruitful discussions and support throughout this work, and Izzeddin Teeti and Valeriu Plamadeala for helping out with test data management. This project has received funding from the European Union’s Horizon 2020 research and innovation programme, under grant agreement No. 964505 (E-pi)
 
 ### Citation
 If you find this work useful, please cite both **Multi-weather-city** and **Cityscapes**:
