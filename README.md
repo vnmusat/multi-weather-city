@@ -2,15 +2,15 @@
 
 Contributors:
 - Valentina Mușat, [Oxford Robotics Institute](https://ori.ox.ac.uk/), University of Oxford
-- Ivan Fursa, [Autonomous Driving Group](add_link), Oxford Brookes University
+- Ivan Fursa, [Autonomous Driving Group](https://www.brookes.ac.uk/Research/Units/TDE/Groups/Autonomous-Driving-and-Intelligent-Transport/), Oxford Brookes University
 - Paul Newman, [Oxford Robotics Institute](https://ori.ox.ac.uk/), University of Oxford
 - Fabio Cuzzolin, [Visual Artificial Intelligence Laboratory](https://cms.brookes.ac.uk/staff/FabioCuzzolin/), Oxford Brookes University
-- Andrew Bradley, [Autonomous Driving Group](add_link), Oxford Brookes University
+- Andrew Bradley, [Autonomous Driving Group](https://www.brookes.ac.uk/Research/Units/TDE/Groups/Autonomous-Driving-and-Intelligent-Transport/), Oxford Brookes University
 
 Arxiv article [here](add_link).
 
 This is the official page of the Multi-weather city dataset, which is released at the [2nd Autonomous Vehicle Vision (AVVision) Workshop](https://avvision.xyz/iccv21/). 
-The Multi-weather-city dataset features 2975 images (the train set of Cityscapes) in 7 generated adverse conditions, using a set of GAN and CycleGAN models:
+The Multi-weather-city dataset features 2975 images (the train set of Cityscapes) in 7 generated adverse conditions (using a set of GAN and CycleGAN models, as presented in the paper):
 1. overcast with (adherent) droplets
 2. night-time
 3. night-time with (adherent) droplets
