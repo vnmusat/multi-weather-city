@@ -60,6 +60,8 @@ The argument ```-cityscapes_path```, is the path to the ```Cityscapes``` dataset
 ### Extension
 In order to extend  this dataset to Foggy Cityscapes, please consult the [official website](https://people.ee.ethz.ch/~csakarid/SFSU_synthetic/).
 
+![Multi-weather-city fog](all_conditions.png)
+
 ### License
 Since this dataset is based on Cityscapes, it will follow the same license:
 
