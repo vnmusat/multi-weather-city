@@ -37,7 +37,7 @@ Due to licensing restrictions, we offer the materials and steps to reconstruct t
 After downloading, the folder structure should look like this:<br/>
 ![Cityscapes tree structure](tree_cityscapes.png)
 
-2. Download the image differences (12.25 GB) from this [Google Drive link](add_link_from_andy). The ```Cityscapes``` folder and the ```Cityscapes_difference``` folder should be on the same level.
+2. Download the image differences zip (10.9 GB) from this [Google Drive link](https://drive.google.com/file/d/1AQ_zt6PLMV4myHXL5wSFkQwIahL8OPoV/view?usp=sharing). The ```Cityscapes``` folder and the ```Cityscapes_difference``` folder should be on the same level.
 3. Clone this repository and make sure you have the necessary libraries.
 4. Resize and center-crop the Cityscapes dataset, then reconstruct the conditions.<br/>
 The argument ```-cityscapes_path```, is the path to the ```Cityscapes``` dataset that you just downloaded. The argument ```-city_diff_path```, is the path to the ```Cityscapes_difference``` folder that you just downloaded. The argument ```-multi_weather_city_path```, is the root path to where the original Cityscapes dataset will be resized and cropped, and to where all the other conditions will be reconstructed.
@@ -46,7 +46,7 @@ The argument ```-cityscapes_path```, is the path to the ```Cityscapes``` dataset
     python reconstruct_cond.py -cityscapes_path '/path/to/Cityscapes' -city_diff_path '/path/to/Cityscapes_difference' -multi_weather_city_path '/path/to/Cityscapes_multi_weather'
     ```
     This will take some time.
-5. When the script is done, the folder Cityscapes_multi_weather should now contain:
+5. When the script is done, the folder ```Cityscapes_multi_weather``` should now contain:
     - ```Cityscapes_overcast```, which is the original Cityscapes (both GT and left RGB images) but resized to 1024x512 and center-cropped, thus a final size of 512x512
     - 7 folders, each folder for one condition:
         1. ```Cityscapes_overcast_drops```
