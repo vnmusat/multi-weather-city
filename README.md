@@ -7,9 +7,7 @@ Contributors:
 - Fabio Cuzzolin, [Visual Artificial Intelligence Laboratory](https://cms.brookes.ac.uk/staff/FabioCuzzolin/), Oxford Brookes University
 - Andrew Bradley, [Autonomous Driving Group](https://www.brookes.ac.uk/Research/Units/TDE/Groups/Autonomous-Driving-and-Intelligent-Transport/), Oxford Brookes University
 
-Arxiv article [here](add_link).
-
-This is the official page of the Multi-weather city dataset, which is released at the [2nd Autonomous Vehicle Vision (AVVision) Workshop](https://avvision.xyz/iccv21/). 
+This is the official page of the [Multi-weather city dataset](https://openaccess.thecvf.com/content/ICCV2021W/AVVision/papers/Musat_Multi-Weather_City_Adverse_Weather_Stacking_for_Autonomous_Driving_ICCVW_2021_paper.pdf), which is released at the [2nd Autonomous Vehicle Vision (AVVision) Workshop](https://avvision.xyz/iccv21/). 
 The Multi-weather-city dataset features 2975 images (the train set of Cityscapes) in 7 generated adverse conditions (using a set of GAN and CycleGAN models, as presented in the paper):
 1. overcast with (adherent) droplets
 2. night-time
@@ -80,12 +78,20 @@ The authors wish to thank Alexander Rast, Peter Ball and Matthias Rolf for fruit
 ### Citation
 If you find this work useful, please cite both **Multi-weather-city** and **Cityscapes**:
 ```
+@InProceedings{Musat_2021_ICCV,
+    author    = {Mușat, Valentina and Fursa, Ivan and Newman, Paul and Cuzzolin, Fabio and Bradley, Andrew},
+    title     = {Multi-Weather City: Adverse Weather Stacking for Autonomous Driving},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV) Workshops},
+    month     = {October},
+    year      = {2021},
+    pages     = {2906-2915}
+}
 
 @inproceedings{Cordts2016Cityscapes,
-title={The Cityscapes Dataset for Semantic Urban Scene Understanding},
-author={Cordts, Marius and Omran, Mohamed and Ramos, Sebastian and Rehfeld, Timo and Enzweiler, Markus and Benenson, Rodrigo and Franke, Uwe and Roth, Stefan and Schiele, Bernt},
-booktitle={Proc. of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
-year={2016}
+    title={The Cityscapes Dataset for Semantic Urban Scene Understanding},
+    author={Cordts, Marius and Omran, Mohamed and Ramos, Sebastian and Rehfeld, Timo and Enzweiler, Markus and Benenson, Rodrigo and Franke, Uwe and Roth, Stefan and Schiele, Bernt},
+    booktitle={Proc. of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+    year={2016}
 }
 ```
 
